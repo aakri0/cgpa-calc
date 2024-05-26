@@ -30,6 +30,16 @@ int main() {
     }
 
     //Logic for marks obtained in each subject
+    vector<pair<string, int>> avg_marks(no_of_subs);
+    cout << "Enter the subject name and marks obtained in CIE-1, CIE-2 and CIE-3:" << endl;
+    for(int i = 0; i < no_of_subs; ++i){
+        string sub_name; cin >> sub_name;
+        int a, b, c; cin >> a >> b >> c;
+        int avg = (a+b+c)/3;
+        avg_marks[i] = {sub_name, avg};
+    }
+
+    //Formula for CGPA
     
 
 }
