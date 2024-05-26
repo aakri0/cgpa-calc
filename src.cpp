@@ -55,7 +55,7 @@ int main() {
     }
 
     int sum_gp = accumulate(gp.begin(), gp.end(), 0);
-    float CG = sum_gp/total_credits;
-    cout << "Your CGPA is: " << (float)CG << endl;
+    float CG = static_cast<float>(sum_gp) / total_credits;
+    cout << "Your CGPA is: " << CG << endl;
 
 }
