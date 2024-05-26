@@ -25,13 +25,8 @@ int main() {
         string x; int y;
         //x is course_name and y is credits
         cin >> x >> y;
+        m[x] = y;
         total_credits += y;
-    }
-
-    //Obtain total credits of the particular semester
-    int total_credits = 0;
-    for(auto &it : m){
-        total_credits += it.second;
     }
 
     //Logic for marks obtained in each subject
